@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <!--CAIXA PARA O NOME DO ALUNO-->
+        <label for="nome">Nome do Aluno</label><br>
+        <input type="text" id="nome" placeholder="Digite o seu nome" required>
+        <br><br>
+        <!--CAIXA PARA A IDADE DO ALUNO-->
+        <label for="idade">Idade do Aluno</label><br>
+        <input type="number" id="idade" placeholder="Idade" required min="10" max="80">
+        <br><br>
+        <!--SELÇÃO DE TURMA-->
+        <label for="turma">Turma do aluno</label><br>
+        <input type="text" id="turma" placeholder="Informa a turma" required>
+        <br><br>
+        <!--PREFERENCIA DE DISCIPLINAS-->
+        <label>Disciplinas</label><br>
+        <input type="checkbox" name="disciplinas" id="webFront" value="front">
+        <label for="">Front-end</label><br>
+        <input type="checkbox" name="disciplinas" id="webBack" value="back">
+        <label for="">Back-end</label><br>
+        <input type="checkbox" name="disciplinas" id="ops" value="devops">
+        <label for="">Dev-ops</label>
+        <br><br>
+        <!--TURNOS-->
+        <label for="turnos">Turnos</label>
+        <select name="turno" id="turno" required>
+            <option value="">Selecione...</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+        <br>
+        <br>
+        <!--BOTÃO ENVIAR-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
