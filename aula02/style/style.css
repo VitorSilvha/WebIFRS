@@ -1,0 +1,20 @@
+* {
+    margin: 15px;
+}
+
+.inicio {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 8px;
+}
+a > img{
+    margin: 0;
+    width: 35px;
+}
+
+a > img:hover{
+    width: 37px;
+}
