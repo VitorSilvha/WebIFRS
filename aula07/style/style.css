@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Layout principal em grid */
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Áreas */
+.header {
+    grid-area: header;
+    padding: 30px;
+    background: #4d4d4d;
+    color: #FDFDFD;
+}
+
+.main {
+    grid-area: main;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #4d4d4d;
+    color: #FDFDFD;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    background: #4d4d4d;
+    color: #FDFDFD;
+}
+
+/* Cabeçalho */
+.nav {
+    width: 65px;
+}
+
+.logo {
+    width: 80px;
+    float: right;
+}
+
+.lima-float {
+    clear: both;
+}
+
+.sobre h1 , p {
+    text-align: center;
+}
+
+.sobre,
+.contato {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    align-self: center;
+    width: 300px;
+    background-color: rgb(0, 120, 215);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid rgb(0, 120, 215);
+    border-radius: 8px;
+    cursor: pointer;
+
+    /* Definindo a transição */
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        transform 0.3s ease,
+        border-radius 0.5s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(0, 120, 215);
+    transform: scale(1.1);
+    border-radius: 25px;
+}
